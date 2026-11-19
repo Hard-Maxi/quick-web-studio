@@ -509,6 +509,66 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 .qw-pf:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(0,0,0,0.06), 0 22px 40px -10px rgba(0,0,0,0.24)!important}
 @media (prefers-reduced-motion: reduce){.qw-bus,.qw-star,.qw-star2,.qw-cloud{animation:none}}
 </style>
+<style>@media (max-width: 1023px){
+.m-cd{font-size:min(168px,13.5vw)!important;letter-spacing:-0.035em!important}
+.m-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:28px 20px!important}
+div:has(>.m-steps)>div[aria-hidden]{display:none!important}
+.m-pfgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.m-sfgrid{grid-template-columns:repeat(6,150px)!important;overflow-x:auto;scrollbar-width:none;padding-bottom:8px}
+.qw-nt span[style*="width: 264px"]{left:auto!important;right:0!important}
+}
+@media (max-width: 760px){
+header>div{flex-wrap:nowrap!important;padding:10px 16px!important;gap:10px!important}
+.m-nav{gap:14px!important;flex-wrap:nowrap!important}
+.m-nav>a:nth-child(-n+3){display:none!important}
+.m-nav>span{white-space:nowrap}
+.m-nav>a:last-child{padding:8px 14px!important}
+header a:first-child{gap:8px!important}
+header a:first-child>span{font-size:15px!important;white-space:nowrap}
+section{padding-left:16px!important;padding-right:16px!important}
+section>a:first-child{font-size:12px!important;top:16px!important;right:16px!important;white-space:nowrap}
+section h2,footer h2{font-size:34px!important;letter-spacing:-1px!important;line-height:1.12!important}
+section h2>span[aria-hidden]{white-space:normal!important}
+.m-h1{font-size:clamp(44px,15vw,72px)!important;letter-spacing:-2px!important}
+.m-lead{font-size:20px!important}
+.m-cdbox{padding:40px 16px 36px!important;border-radius:28px!important;margin-top:56px!important}
+.m-cd{font-size:clamp(52px,18vw,84px)!important;letter-spacing:-2px!important}
+.m-steps{grid-template-columns:minmax(0,1fr)!important;gap:28px!important}
+.m-tabs{flex-wrap:nowrap!important;overflow-x:auto;gap:24px!important;scrollbar-width:none}
+.m-pfgrid{grid-template-columns:minmax(0,1fr)!important;gap:28px!important}
+.m-sfgrid{grid-template-columns:repeat(6,136px)!important;margin-left:-16px!important;margin-right:-16px!important;padding:0 16px 8px}
+.m-plh{flex-wrap:wrap!important;padding:20px!important;gap:16px!important}
+.m-plh>span:first-child{width:112px!important;height:112px!important}
+.m-plt{font-size:38px!important}
+.m-pl{padding:4px 8px 20px!important}
+.m-sfbar>div{gap:12px!important;padding:10px 16px!important}
+.m-sfbar>div>div:nth-child(2){display:none!important}
+.m-npmast{justify-content:center!important}
+.m-npmast>span:first-child,.m-npmast>span:last-child{display:none!important}
+.m-npt{font-size:40px!important}
+.m-npgrid{grid-template-columns:minmax(0,1fr)!important}
+.m-npgrid>article{padding-right:0!important;border-right:none!important}
+.m-npgrid>aside{padding-left:0!important;margin-top:32px;border-top:2px solid #121212;padding-top:20px}
+.qw-npcols{column-count:1!important}
+.m-fqtiles{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.m-dqbar{padding:14px 16px!important;gap:12px!important}
+.qw-dqb{min-width:0!important}
+footer>div:first-child{padding:64px 16px 0!important;gap:40px!important}
+}
+@media (max-width: 400px){.m-nav>span{display:none!important}}
+section,footer{overflow-x:clip}</style>
+<style>header{z-index:50!important}
+@media (max-width: 760px){
+.m-serp{height:500px!important}
+.m-serp>div>div:nth-child(2){font-size:16px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.m-serp>div>div:nth-child(3){font-size:13px!important;line-height:1.5!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.qw-dqo{min-width:0!important}
+.m-dqbar>div:first-child{min-width:0}
+}
+@media (max-width: 400px){
+section>a:first-child{left:16px!important;white-space:normal!important;text-align:center}
+.qw-dqo{padding:12px!important;gap:10px!important;font-size:16px!important}
+}</style>
 </helmet>
 <div style="background: #F5F5F7; color: #0B0B0F; font-family: Inter, system-ui, sans-serif">
 
@@ -518,7 +578,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <svg width="34" height="34" sc-camel-view-box="0 0 64 64" aria-hidden="true"><defs><pattern id="hdB" sc-camel-pattern-units="userSpaceOnUse" width="24" height="11.25"><image href="assets/15f9563e7f.webp" width="24" height="11.25" sc-camel-preserve-aspect-ratio="none"></image></pattern><linearGradient id="hdT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B2D35"></stop><stop offset="1" stop-color="#0B0B0F"></stop></linearGradient></defs><rect width="64" height="64" rx="15" fill="url(#hdT)"></rect><circle cx="31" cy="30" r="16" fill="none" stroke="#E6E7EB" stroke-width="6.5"></circle><path d="M 38.35 35.09 L 49.95 43.85 A 3.6 3.6 0 0 1 44.85 48.95 L 36.09 37.35 Z" fill="#E6E7EB" stroke="#0B0B0F" stroke-width="1.2" stroke-linejoin="round"></path><path d="M 29.4 31.4 L 30.1 20 L 31 17.2 L 31 31.4 Z" fill="#4A82CB"></path><path d="M 31 17.2 L 31.9 20 L 32.6 31.4 L 31 31.4 Z" fill="#2F5E9E"></path><circle cx="31" cy="30" r="2.6" fill="#C9A55A"></circle></svg>
 <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px; letter-spacing: -0.5px">Quick Web <span style="font-weight: 500; color: #55565C">Studio</span></span>
 </a>
-<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 14px">
+<nav class="m-nav" style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 14px">
 <a href="#" style="color: #3A3B40; text-decoration: none">Работы</a>
 <a href="#" style="color: #3A3B40; text-decoration: none">Цены</a>
 <a href="#" style="color: #3A3B40; text-decoration: none">Вопросы</a>
@@ -531,8 +591,8 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <section style="position: relative; text-align: center; padding: 96px 24px 112px">
 <a href="#" style="position: absolute; top: 24px; right: 24px; font-size: 13px; color: #3A3B40; text-decoration: none; background: #FFFFFF; border: 1px solid #E2E2E6; padding: 8px 14px; border-radius: 999px">Этот блок — в стиле Apple · Хочу так же →</a>
 <p style="margin: 0; font-size: 21px; font-weight: 600; color: #3A3B40">Сайты и лендинги · Буэнос-Айрес · Весь мир</p>
-<h1 style="margin: 12px 0 0; font-size: 112px; font-weight: 700; letter-spacing: -5px; line-height: 1">Ваш сайт. Завтра.</h1>
-<p style="margin: 22px auto 0; font-size: 28px; line-height: 1.3; color: #3A3B40; max-width: 760px">Платите, только если понравился. На любом языке: испанском, английском, русском и других.</p>
+<h1 class="m-h1" style="margin: 12px 0 0; font-size: 112px; font-weight: 700; letter-spacing: -5px; line-height: 1">Ваш сайт. Завтра.</h1>
+<p class="m-lead" style="margin: 22px auto 0; font-size: 28px; line-height: 1.3; color: #3A3B40; max-width: 760px">Платите, только если понравился. На любом языке: испанском, английском, русском и других.</p>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px; margin-top: 112px">
 <span style="position: relative; display: inline-flex">
 
@@ -541,9 +601,9 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <a href="#" style="font-size: 19px; color: #0B0B0F; text-decoration: none; font-weight: 500">Первый экран бесплатно ›</a>
 </div>
 
-<div style="max-width: 980px; margin: 72px auto 0; background: #0B0B0F; border-radius: 40px; padding: 72px 48px 56px; box-shadow: 0 40px 80px rgba(11,11,15,0.18)">
+<div class="m-cdbox" style="max-width: 980px; margin: 72px auto 0; background: #0B0B0F; border-radius: 40px; padding: 72px 48px 56px; box-shadow: 0 40px 80px rgba(11,11,15,0.18)">
 <p style="margin: 0; color: #A8AAB2; font-size: 18px">До черновика вашего сайта</p>
-<div style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 168px; letter-spacing: -6px; line-height: 1; color: #4A82CB; margin: 18px 0 32px; font-variant-numeric: tabular-nums; background-image: url(&quot;assets/6b572fc85a.webp&quot;), linear-gradient(180deg, #5B95DD 0%, #4A82CB 55%, #3D71B9 100%); background-repeat: no-repeat, no-repeat; background-size: 700px auto, 100% 100%; background-position: {{cloudX}} 50%, 0 0; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">{{clock}}</div>
+<div class="m-cd" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 168px; letter-spacing: -6px; line-height: 1; color: #4A82CB; margin: 18px 0 32px; font-variant-numeric: tabular-nums; background-image: url(&quot;assets/6b572fc85a.webp&quot;), linear-gradient(180deg, #5B95DD 0%, #4A82CB 55%, #3D71B9 100%); background-repeat: no-repeat, no-repeat; background-size: 700px auto, 100% 100%; background-position: {{cloudX}} 50%, 0 0; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent">{{clock}}</div>
 <div style="max-width: 620px; margin: 0 auto; height: 6px; background: #26272D; border-radius: 3px; overflow: hidden"><div style="height: 6px; background: linear-gradient(90deg, #3D71B9, #4E89D4); width: {{progress}}"></div></div>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 48px; margin-top: 44px; color: #FFFFFF">
 <div><div style="font-size: 34px; font-weight: 700">24 ч</div><div style="color: #A8AAB2; font-size: 15px; margin-top: 4px">до черновика</div></div>
@@ -563,7 +623,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <div aria-hidden="true" style="position: absolute; left: 12.5%; right: 12.5%; top: 27px; height: 1px; background: rgba(255,255,255,0.12)"></div>
 <div aria-hidden="true" style="position: absolute; left: 12.5%; top: 27px; height: 1px; width: {{lineW}}; background: linear-gradient(90deg, rgba(74,130,203,0), #4A82CB)"></div>
 <div aria-hidden="true" style="position: absolute; left: {{dotX}}; top: 22px; width: 11px; height: 11px; margin-left: -5.5px; border-radius: 50%; background: #CFE2FA; box-shadow: 0 0 0 3px rgba(74,130,203,0.35), 0 0 18px 4px rgba(91,149,221,0.75); opacity: {{dotOp}}"></div>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+<div class="m-steps" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
 <div class="qw-step" style="position: relative; padding: 0 4px; display: flex; flex-direction: column; align-items: center">
 <div style="position: relative; z-index: 1; width: 55px; height: 55px; border-radius: 14px; background: #15171C; border: 1px solid {{b1}}; display: flex; align-items: center; justify-content: center; box-shadow: {{g1}}"><svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="#DDE3EC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4v-14z"></path><path d="M8 9.5h8M8 12.5h5"></path></svg></div>
 <div class="qw-card" style="align-self: stretch; flex: 1; margin-top: 28px; padding: 24px 22px 26px; border-radius: 16px; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.08); box-shadow: {{c1}}">
@@ -610,12 +670,12 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <div style="max-width: 1200px; margin: 0 auto">
 <h2 style="margin: 0; font-size: 44px; line-height: 1.1; letter-spacing: -1.2px; font-weight: 700">Работы, которые уже живут в сети</h2>
 <p style="margin: 14px 0 0; font-size: 18px; color: #6A6A6A">Пять настоящих сайтов. Нажмите на карточку — откроется живой сайт.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 36px; margin-top: 40px; border-bottom: 1px solid #EBEBEB">
+<div class="m-tabs" style="display: flex; flex-wrap: wrap; gap: 36px; margin-top: 40px; border-bottom: 1px solid #EBEBEB">
 <sc-for list="{{pfTabs}}" as="t" hint-placeholder-count="6">
 <button type="button" sc-camel-on-click="{{t.pick}}" style="display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 6px 2px 14px; min-height: 44px; background: none; border: none; border-bottom: 2px solid {{t.bd}}; margin-bottom: -1px; color: {{t.col}}; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; opacity: {{t.op}}"><svg width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{t.d}}"></path></svg>{{t.label}}</button>
 </sc-for>
 </div>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 28px; margin-top: 36px">
+<div class="m-pfgrid" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 28px; margin-top: 36px">
 <sc-for list="{{pfItems}}" as="p" hint-placeholder-count="5">
 <div class="qw-pf" style="position: relative; background: #FFFFFF; border: 1px solid #ECECEC; border-radius: 18px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.06), 0 10px 28px -6px rgba(0,0,0,0.16), 0 24px 48px -24px rgba(0,0,0,0.22)">
 <div style="position: relative; overflow: hidden; aspect-ratio: 16 / 10; background: #F2F2F2; border-bottom: 1px solid #EFEFEF">
@@ -685,7 +745,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <div style="display: flex; align-items: center; gap: 14px; height: 48px; padding: 0 20px; border: 1px solid #DFE1E5; border-radius: 24px; box-shadow: 0 1px 6px rgba(32,33,36,0.18)"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#9AA0A6" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg><span style="font-size: 16px; color: #202124; white-space: nowrap"><span style="position: relative; display: inline-block">{{gq}}<span aria-hidden="true" style="position: absolute; left: 0; top: -14px; bottom: -14px; right: -160px; display: flex; align-items: center; white-space: nowrap; background: #FFFFFF; transform-origin: {{sqX}} 50%; transform: scale(1.6); clip-path: circle(28px at {{sqX}} 50%); opacity: {{sqO}}; pointer-events: none">{{gq}}</span></span><span style="display: inline-block; width: 1.5px; height: 18px; margin-left: 1px; vertical-align: -3px; background: #202124; opacity: {{gqc}}"></span></span></div>
 <div style="display: flex; gap: 24px; margin-top: 14px; padding: 0 0 0 4px; border-bottom: 1px solid #EBEBEB; font-size: 14px; color: #5F6368"><span style="padding: 0 2px 10px; color: #1A73E8; border-bottom: 3px solid #1A73E8">{{gTabAll}}</span><span style="padding: 0 2px 10px">{{gTabMap}}</span><span style="padding: 0 2px 10px">{{gTabNews}}</span></div>
 <p style="margin: 12px 0 0; font-size: 14px; color: #70757A; opacity: {{gOp}}">{{gCount}}</p>
-<div style="position: relative; height: 440px; margin-top: 18px; opacity: {{gOp}}; transition: opacity .3s ease">
+<div class="m-serp" style="position: relative; height: 440px; margin-top: 18px; opacity: {{gOp}}; transition: opacity .3s ease">
 <div style="position: absolute; left: 0; right: 0; top: {{gT1}}; background: #FFFFFF; z-index: 1; padding: 6px 0 8px;"><div style="display: flex; align-items: center; gap: 12px"><span style="width: 28px; height: 28px; border-radius: 50%; background: #F1F3F4; border: 1px solid #E8EAED; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #1A73E8">V</span><span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 14px; color: #202124">Viajeros</span><span style="font-size: 12px; color: #4D5156">viajeros.blog › {{gU1}}</span></span></div><div style="margin-top: 6px; font-size: 20px; line-height: 1.3; color: #1A0DAB">{{gR1t}}</div><div style="margin-top: 4px; font-size: 14px; line-height: 1.58; color: #4D5156">{{gR1d}}</div></div>
 <div style="position: absolute; left: 0; right: 0; top: {{gT2}}; background: #FFFFFF; z-index: 1; padding: 6px 0 8px;"><div style="display: flex; align-items: center; gap: 12px"><span style="width: 28px; height: 28px; border-radius: 50%; background: #F1F3F4; border: 1px solid #E8EAED; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #188038">A</span><span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 14px; color: #202124">Andes Travel</span><span style="font-size: 12px; color: #4D5156">andes-travel.com › {{gU2}}</span></span></div><div style="margin-top: 6px; font-size: 20px; line-height: 1.3; color: #1A0DAB">{{gR2t}}</div><div style="margin-top: 4px; font-size: 14px; line-height: 1.58; color: #4D5156">{{gR2d}}</div></div>
 <div style="position: absolute; left: 0; right: 0; top: {{gT3}}; background: #FFFFFF; z-index: 3; box-shadow: {{gSh}}; border-radius: 10px; margin: 0 -10px; padding: 6px 10px 8px;"><div style="display: flex; align-items: center; gap: 12px"><span style="width: 28px; height: 28px; border-radius: 50%; background: #F1F3F4; border: 1px solid #E8EAED; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #C5221F">C</span><span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 14px; color: #202124">Casa Luna</span><span style="font-size: 12px; color: #4D5156">casaluna-retiro.com › {{gU3}}</span></span></div><div style="margin-top: 6px; font-size: 20px; line-height: 1.3; color: #1A0DAB">{{gR3t}}</div><div style="margin-top: 4px; font-size: 14px; line-height: 1.58; color: #4D5156">{{gR3d}}</div><div style="overflow: hidden; max-height: {{gRh}}; opacity: {{gRo}}; transition: max-height .35s ease, opacity .35s ease"><div style="display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 14px; color: #4D5156"><span style="color: #E7711B; letter-spacing: 1px">★★★★★</span><span>{{gRate}}</span></div><div style="margin-top: 4px; font-size: 14px; color: #4D5156">{{gMeta}}</div><div style="display: flex; gap: 8px; margin-top: 10px"><span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border: 1px solid #DADCE0; border-radius: 999px; font-size: 14px; color: #1A73E8">{{gBtn1}}</span><span style="display: inline-flex; align-items: center; padding: 7px 14px; border: 1px solid #DADCE0; border-radius: 999px; font-size: 14px; color: #1A73E8">{{gBtn2}}</span></div></div></div>
@@ -740,7 +800,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 </svg></div><svg sc-camel-view-box="0 0 480 544" width="108.4" height="122.8" aria-hidden="true" style="position: absolute; right: -10px; top: -64.6px; overflow: visible; pointer-events: none; z-index: 2"><image href="assets/6e771dadc7.webp" x="0" y="0" width="480" height="544"></image><g transform="translate(0 {{kpTy2}})"><image href="assets/e46373baab.webp" x="0" y="0" width="480" height="544"></image></g></svg><span style="position: absolute; top: -13px; left: 50%; transform: translateX(-50%); white-space: nowrap; background: #4A82CB; color: #FFFFFF; font-size: 12px; font-weight: 600; letter-spacing: 0.4px; padding: 6px 12px; border-radius: 999px; box-shadow: 0 6px 14px -4px rgba(74,130,203,0.6)">Чаще всего выбирают</span><p class="qw-spn">Стандарт</p><p class="qw-spd">Полноценный лендинг под рекламу и продажи.</p><div class="qw-spp"><span>650</span><small>USD</small></div><div class="qw-spm" style="opacity: {{spSo}}; transform: translateY({{spSy}})">+ {{spA2}} USD в месяц</div><span class="qw-spt">Черновик за 48 часов</span><a href="https://wa.me/" class="qw-spb qw-spbh">Обсудить в WhatsApp</a><ul><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Лендинг до 10 блоков</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Индивидуальный дизайн и анимации</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Видео и галереи</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>До 2 языков</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Пиксель Meta, домен и хостинг</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Техническое SEO</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>3 круга правок</span></li></ul></div><div class="qw-spc"><p class="qw-spn">Премиум</p><p class="qw-spd">Сайт-система: языки, города, заявки и аналитика.</p><div class="qw-spp"><span>1 500</span><small>USD</small></div><div class="qw-spm" style="opacity: {{spSo}}; transform: translateY({{spSy}})">+ {{spA3}} USD в месяц</div><span class="qw-spt">Черновик за 72 часа</span><a href="https://wa.me/" class="qw-spb">Обсудить в WhatsApp</a><ul><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Всё из «Стандарта»</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>До 3 языков</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Страницы под города и услуги</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Локальное SEO и Google Карты</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>Заявки в аналитике и CRM</span></li><li><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l2.9 2.9L12.5 5"></path></svg><span>3 круга правок + 30 дней мелких правок</span></li></ul></div>
 </div>
 <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 40px; padding: 20px 24px; background: #FFFFFF; border-radius: 12px; box-shadow: 0 2px 5px -1px rgba(50,50,93,0.18), 0 1px 3px -1px rgba(0,0,0,0.2)">
-<span style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: #425466"><b style="font-size: 20px; color: #0A2540">0 $</b> до одобрения черновика. 50% — когда понравилось, 50% — перед запуском на вашем домене.</span>
+<span style="display: flex; align-items: center; gap: 12px; font-size: 15px; color: #425466"><b style="font-size: 20px; color: #0A2540; white-space: nowrap">0 $</b> до одобрения черновика. 50% — когда понравилось, 50% — перед запуском на вашем домене.</span>
 <button type="button" sc-camel-on-click="{{spToggleX}}" style="min-height: 44px; padding: 8px 4px; border: none; background: none; font: inherit; font-size: 15px; font-weight: 600; color: #4A82CB; cursor: pointer">Дополнительные услуги <span style="display: inline-block; transform: rotate({{spXr}}); transition: transform .3s ease">↓</span></button>
 </div>
 <div style="overflow: hidden; max-height: {{spXh}}; transition: max-height .45s ease">
@@ -755,7 +815,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <p style="margin: 0; font-size: 14px; font-weight: 700; color: #B3B3B3">Сделано для вас</p>
 <h2 style="margin: 8px 0 0; font-size: 44px; line-height: 1.1; letter-spacing: -1.2px; font-weight: 800">Для кого мы делаем сайты</h2>
 <p style="margin: 12px 0 0; font-size: 17px; color: #B3B3B3; max-width: 640px">Выберите свою нишу — покажем, что войдёт в ваш сайт.</p>
-<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; margin-top: 36px">
+<div class="m-sfgrid" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 18px; margin-top: 36px">
 <sc-for list="{{sfCards}}" as="c" hint-placeholder-count="6">
 <button type="button" sc-camel-on-click="{{c.pick}}" class="qw-sf" style="position: relative; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; padding: 14px 14px 18px; border: none; border-radius: 10px; background: {{c.cardBg}}; color: #FFFFFF; font: inherit; cursor: pointer">
 <span style="position: relative; display: block; aspect-ratio: 1 / 1; border-radius: 6px; background: {{c.bg}}; box-shadow: 0 8px 24px rgba(0,0,0,0.5)"><svg width="30" height="30" sc-camel-view-box="0 0 64 64" aria-hidden="true" style="position: absolute; left: 10px; top: 10px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35))"><rect width="64" height="64" rx="15" fill="#16171C"></rect><circle cx="31" cy="30" r="16" fill="none" stroke="#E6E7EB" stroke-width="6.5"></circle><path d="M 38.35 35.09 L 49.95 43.85 A 3.6 3.6 0 0 1 44.85 48.95 L 36.09 37.35 Z" fill="#E6E7EB" stroke="#16171C" stroke-width="1.2" stroke-linejoin="round"></path><path d="M 29.4 31.4 L 30.1 20 L 31 17.2 L 31 31.4 Z" fill="#4A82CB"></path><path d="M 31 17.2 L 31.9 20 L 32.6 31.4 L 31 31.4 Z" fill="#2F5E9E"></path><circle cx="31" cy="30" r="2.6" fill="#C9A55A"></circle></svg><span style="position: absolute; left: 10px; right: 10px; top: 48px; font-size: 17px; line-height: 1.05; font-weight: 800; letter-spacing: -0.4px">{{c.title}}</span><span class="qw-sfp" style="position: absolute; right: 8px; bottom: 8px; width: 40px; height: 40px; border-radius: 50%; background: #4A82CB; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(0,0,0,0.45); opacity: {{c.pOp}}; transform: translateY({{c.pY}})"><svg width="16" height="16" sc-camel-view-box="0 0 16 16" aria-hidden="true" style="display: {{c.playD}}"><path d="M4 2.5v11l9.5-5.5z" fill="#0B0B0F"></path></svg><span style="display: {{c.eqD}}; align-items: flex-end; gap: 2px; height: 14px"><i style="width: 3px; height: {{c.e1}}; background: #0B0B0F; border-radius: 1px"></i><i style="width: 3px; height: {{c.e2}}; background: #0B0B0F; border-radius: 1px"></i><i style="width: 3px; height: {{c.e3}}; background: #0B0B0F; border-radius: 1px"></i></span></span></span>
@@ -765,11 +825,11 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 </sc-for>
 </div>
 <div style="margin-top: 48px; border-radius: 12px; overflow: hidden; background: linear-gradient(180deg, {{sfTint}} 0%, #181818 260px)">
-<div style="display: flex; align-items: flex-end; gap: 28px; padding: 32px 32px 28px">
+<div class="m-plh" style="display: flex; align-items: flex-end; gap: 28px; padding: 32px 32px 28px">
 <span style="flex: none; position: relative; width: 180px; height: 180px; border-radius: 6px; background: {{sfCover}}; box-shadow: 0 16px 40px rgba(0,0,0,0.55)"><svg width="40" height="40" sc-camel-view-box="0 0 64 64" aria-hidden="true" style="position: absolute; left: 14px; top: 12px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35))"><rect width="64" height="64" rx="15" fill="#16171C"></rect><circle cx="31" cy="30" r="16" fill="none" stroke="#E6E7EB" stroke-width="6.5"></circle><path d="M 38.35 35.09 L 49.95 43.85 A 3.6 3.6 0 0 1 44.85 48.95 L 36.09 37.35 Z" fill="#E6E7EB" stroke="#16171C" stroke-width="1.2" stroke-linejoin="round"></path><path d="M 29.4 31.4 L 30.1 20 L 31 17.2 L 31 31.4 Z" fill="#4A82CB"></path><path d="M 31 17.2 L 31.9 20 L 32.6 31.4 L 31 31.4 Z" fill="#2F5E9E"></path><circle cx="31" cy="30" r="2.6" fill="#C9A55A"></circle></svg><span style="position: absolute; left: 14px; right: 14px; top: 66px; font-size: 26px; line-height: 1.05; font-weight: 800; letter-spacing: -0.6px">{{sfTitle}}</span></span>
-<div style="min-width: 0"><p style="margin: 0; font-size: 13px; font-weight: 700">Плейлист</p><p style="margin: 8px 0 0; font-size: 56px; line-height: 1; letter-spacing: -2px; font-weight: 800">{{sfTitle}}</p><p style="margin: 14px 0 0; font-size: 14px; color: #D0D0D0">{{sfSub}}</p><p style="margin: 6px 0 0; font-size: 14px; color: #FFFFFF"><b>Quick Web Studio</b> <span style="color: #B3B3B3">· {{sfMeta}}</span></p></div>
+<div style="min-width: 0"><p style="margin: 0; font-size: 13px; font-weight: 700">Плейлист</p><p class="m-plt" style="margin: 8px 0 0; font-size: 56px; line-height: 1; letter-spacing: -2px; font-weight: 800">{{sfTitle}}</p><p style="margin: 14px 0 0; font-size: 14px; color: #D0D0D0">{{sfSub}}</p><p style="margin: 6px 0 0; font-size: 14px; color: #FFFFFF"><b>Quick Web Studio</b> <span style="color: #B3B3B3">· {{sfMeta}}</span></p></div>
 </div>
-<div style="padding: 4px 32px 28px">
+<div class="m-pl" style="padding: 4px 32px 28px">
 <div style="display: grid; grid-template-columns: 40px 1fr 80px; gap: 12px; padding: 0 12px 10px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 13px; color: #A7A7A7"><span>#</span><span>Что войдёт в сайт</span><span style="text-align: right">⏱</span></div>
 <sc-for list="{{sfTracks}}" as="t" hint-placeholder-count="6">
 <div class="qw-sft" style="display: grid; grid-template-columns: 40px 1fr 80px; gap: 12px; align-items: center; padding: 10px 12px; border-radius: 6px; background: {{t.rowBg}}; font-size: 15px">
@@ -781,7 +841,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 </div>
 </div>
 </div>
-<div style="position: sticky; bottom: 0; z-index: 3; margin: 40px -24px 0; background: #000000; border-top: 1px solid #282828">
+<div class="m-sfbar" style="position: sticky; bottom: 0; z-index: 3; margin: 40px -24px 0; background: #000000; border-top: 1px solid #282828">
 <div style="max-width: 1240px; margin: 0 auto; display: flex; align-items: center; gap: 24px; padding: 12px 24px">
 <div style="flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: 12px"><span style="flex: none; width: 52px; height: 52px; border-radius: 4px; background: {{sfCover}}"></span><span style="min-width: 0"><span style="display: block; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{sfNow}}</span><span style="display: block; font-size: 12px; color: #B3B3B3">{{sfTitle}} · ваш сайт</span></span></div>
 <div style="flex: 1.4 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 8px">
@@ -796,9 +856,9 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <section class="qw-np" style="position: relative; background: #F6F2E8; color: #121212; padding: 96px 24px 112px; font-family: Georgia, 'Times New Roman', serif">
 <a href="#" style="position: absolute; top: 24px; right: 24px; font-family: Inter, system-ui, sans-serif; font-size: 13px; color: #121212; text-decoration: none; background: #FFFFFF; border: 1px solid #CFC8B8; padding: 8px 14px; border-radius: 999px">Этот блок — в стиле The New York Times · Хочу так же →</a>
 <div style="max-width: 1100px; margin: 0 auto">
-<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 10px; border-bottom: 1px solid #121212">
+<div class="m-npmast" style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding-bottom: 10px; border-bottom: 1px solid #121212">
 <span style="flex: 1; font-size: 12px; letter-spacing: 1px; text-transform: uppercase">Издание Буэнос-Айрес</span>
-<span style="font-family: 'UnifrakturMaguntia', 'Old English Text MT', Georgia, serif; font-size: 64px; line-height: 1; white-space: nowrap">The Quick Times</span>
+<span class="m-npt" style="font-family: 'UnifrakturMaguntia', 'Old English Text MT', Georgia, serif; font-size: 64px; line-height: 1; white-space: nowrap">The Quick Times</span>
 <span style="flex: 1; text-align: right; font-size: 12px; letter-spacing: 1px; text-transform: uppercase">Среда, 11 ноября 2026</span>
 </div>
 <div style="height: 3px; border-bottom: 1px solid #121212; margin-bottom: 0"></div>
@@ -808,7 +868,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 </div>
 <div style="position: relative; clip-path: {{npClip}}">
 <div aria-hidden="true" style="position: absolute; z-index: 2; left: -12px; right: -12px; top: {{npRoll}}; height: 18px; margin-top: -9px; background: linear-gradient(180deg, rgba(18,18,18,0), rgba(18,18,18,0.18) 45%, rgba(18,18,18,0.32) 50%, rgba(18,18,18,0)); opacity: {{npRollO}}; pointer-events: none"></div>
-<div style="display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0; margin-top: 28px">
+<div class="m-npgrid" style="display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0; margin-top: 28px">
 <article style="padding-right: 32px; border-right: 1px solid #CFC8B8">
 <p style="margin: 0; font-family: Inter, system-ui, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #A3121E">Отзыв клиента</p>
 <h2 style="margin: 10px 0 0; font-size: 46px; line-height: 1.08; font-weight: 700; letter-spacing: -0.5px">«Мне все оч понравилось: скорость, простота и понимание»</h2>
@@ -848,7 +908,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 <div style="max-width: 980px; margin: 0 auto">
 <h2 style="margin: 0; text-align: center; font-size: 48px; line-height: 1.08; letter-spacing: -1.2px; font-weight: 700">Чем мы можем помочь?</h2>
 <label style="display: flex; align-items: center; gap: 12px; max-width: 680px; margin: 32px auto 0; height: 56px; padding: 0 20px; box-sizing: border-box; background: #FFFFFF; border: 1px solid #D2D2D7; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)"><svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#86868B" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5L21 21"></path></svg><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%)">Поиск по вопросам</span><input type="search" value="{{fqQ}}" sc-camel-on-change="{{fqOnQ}}" placeholder="Например: сроки, оплата, языки" style="flex: 1; min-width: 0; height: 100%; border: none; outline: none; background: transparent; font: inherit; font-size: 17px; color: #1D1D1F"></label>
-<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-top: 36px">
+<div class="m-fqtiles" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; margin-top: 36px">
 <sc-for list="{{fqTiles}}" as="t" hint-placeholder-count="6">
 <button type="button" sc-camel-on-click="{{t.pick}}" style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 18px 8px 16px; border-radius: 16px; border: 1px solid {{t.bd}}; background: {{t.bg}}; color: #1D1D1F; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: {{t.sh}}; transition: background .2s ease, border-color .2s ease"><svg width="30" height="30" sc-camel-view-box="0 0 24 24" fill="none" stroke="{{t.ic}}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{t.d}}"></path></svg>{{t.label}}</button>
 </sc-for>
@@ -974,7 +1034,7 @@ a{color:#0B0B0F}a:hover{color:#3A3B40}
 </div>
 </div>
 <div style="display: {{dqQD}}; max-width: 1100px; margin: 36px auto 0; border-top: 2px solid #E5E5E5; background: {{dqFbBg}}; transition: background .3s ease; border-radius: 0 0 18px 18px">
-<div style="max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 104px; padding: 18px 24px; box-sizing: border-box">
+<div class="m-dqbar" style="max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 104px; padding: 18px 24px; box-sizing: border-box">
 <div style="display: flex; align-items: center; gap: 14px; opacity: {{dqFbO}}; transform: translateY({{dqFbY}}); transition: opacity .3s ease, transform .3s ease"><span style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="#4D9A1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"></path></svg></span><span><span style="display: block; font-size: 22px; font-weight: 800; color: #3E7F16">Отлично!</span><span style="display: block; font-size: 15px; font-weight: 700; color: #4D9A1E">{{dqFbT}}</span></span></div>
 <button type="button" sc-camel-on-click="{{dqNext}}" class="qw-dqb" style="flex: none; min-width: 160px; min-height: 52px; padding: 0 24px; border: none; border-radius: 16px; background: {{dqBtnBg}}; color: {{dqBtnC}}; box-shadow: 0 4px 0 {{dqBtnSh}}; font: inherit; font-size: 17px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer">{{dqBtn}}</button>
 </div>
