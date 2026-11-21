@@ -4,6 +4,17 @@ from i18n import T,NOTION,TITLE,DESC
 REPO=__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath(__file__))); BASE='https://quickweb.studio/'
 src=open(''+__import__('os').path.dirname(__file__)+'/master_ru.html').read()
 URL={'es':BASE,'ru':BASE+'ru/','en':BASE+'en/'}
+LOC={'es':'es_AR','ru':'ru_RU','en':'en_US'}
+def og(lang):
+    img=BASE+'og/'+lang+'.jpg?v=1'
+    alt=[l for l in ('es','ru','en') if l!=lang]
+    return (f'<meta property="og:type" content="website"><meta property="og:site_name" content="Quick Web Studio">'
+            f'<meta property="og:title" content="{TITLE[lang]}"><meta property="og:description" content="{DESC[lang]}">'
+            f'<meta property="og:url" content="{URL[lang]}"><meta property="og:locale" content="{LOC[lang]}">'
+            + ''.join(f'<meta property="og:locale:alternate" content="{LOC[l]}">' for l in alt) +
+            f'<meta property="og:image" content="{img}"><meta property="og:image:secure_url" content="{img}"><meta property="og:image:type" content="image/jpeg">'
+            f'<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{TITLE[lang]}">'
+            f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{TITLE[lang]}"><meta name="twitter:description" content="{DESC[lang]}"><meta name="twitter:image" content="{img}">')
 def switcher(lang,pre):
     href={'es':(pre+'?lang=es') if pre else './?lang=es','ru':pre+'ru/','en':pre+'en/'}
     out=[]
@@ -42,7 +53,7 @@ def build(lang):
         print(lang,'untranslated markup:',left[:20])
     s=s.replace('<html lang="ru">','<html lang="%s">'%lang)
     s=re.sub(r'<title>[^<]*</title>','<title>%s</title>'%TITLE[lang],s,1)
-    hl=''.join(f'<link rel="alternate" hreflang="{l}" href="{URL[l]}">' for l in ('es','ru','en'))+f'<link rel="alternate" hreflang="x-default" href="{URL["es"]}"><link rel="canonical" href="{URL[lang]}"><meta name="description" content="{DESC[lang]}"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0B0B0F">'
+    hl=''.join(f'<link rel="alternate" hreflang="{l}" href="{URL[l]}">' for l in ('es','ru','en'))+f'<link rel="alternate" hreflang="x-default" href="{URL["es"]}"><link rel="canonical" href="{URL[lang]}"><meta name="description" content="{DESC[lang]}"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0B0B0F">'+og(lang)
     s=s.replace('<meta charset="utf-8">','<meta charset="utf-8">\n'+(HEAD_JS%lang)+'\n'+hl,1)
     old='<span style="color: #55565C">ES · <b style="color: #0B0B0F">RU</b> · EN</span>'
     assert s.count(old)==1; s=s.replace(old,switcher(lang,pre))
