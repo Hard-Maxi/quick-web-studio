@@ -1097,7 +1097,7 @@ section>a:first-child{left:16px!important;white-space:normal!important;text-alig
 </x-dc>
 <script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:8000}}">
 class Component extends DCLogic {
-  constructor(props) { super(props); this.state = { left: 86400 - 1337, now: Date.now() }; }
+  constructor(props) { super(props); this.state = { left: 86400, now: Date.now() }; }
   componentDidMount() {
     this.t = setInterval(() => this.setState({ left: this.state.left > 0 ? this.state.left - 1 : 86400, now: Date.now() }), 1000);
     this.t0 = Date.now();
