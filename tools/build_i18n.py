@@ -1,7 +1,7 @@
 import re,os,sys,json
 sys.path.insert(0,__import__('os').path.dirname(__file__))
 from i18n import T,NOTION,TITLE,DESC
-REPO=__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath(__file__))); BASE='https://hard-maxi.github.io/quick-web-studio/'
+REPO=__import__('os').path.dirname(__import__('os').path.dirname(__import__('os').path.abspath(__file__))); BASE='https://quickweb.studio/'
 src=open(''+__import__('os').path.dirname(__file__)+'/master_ru.html').read()
 URL={'es':BASE,'ru':BASE+'ru/','en':BASE+'en/'}
 def switcher(lang,pre):
