@@ -8,7 +8,7 @@ LOC={'es':'es_AR','ru':'ru_RU','en':'en_US'}
 def og(lang):
     img=BASE+'og/'+lang+'.jpg?v=3'
     alt=[l for l in ('es','ru','en') if l!=lang]
-    return (f'<meta property="og:type" content="website"><meta property="og:site_name" content="Quick Web Studio">'
+    return (f'<meta property="og:type" content="website">'
             f'<meta property="og:title" content="{TITLE[lang]}"><meta property="og:description" content="{DESC[lang]}">'
             f'<meta property="og:url" content="{URL[lang]}"><meta property="og:locale" content="{LOC[lang]}">'
             + ''.join(f'<meta property="og:locale:alternate" content="{LOC[l]}">' for l in alt) +

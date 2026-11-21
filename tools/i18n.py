@@ -350,6 +350,6 @@ NOTION = {'es': {'не': 'no', 'н': 'n'}, 'en': {'не': 'not', 'н': 'no'}}
 TITLE = {'ru': 'Quick Web Studio — сайты и лендинги за 24 часа · Буэнос-Айрес',
          'es': 'Quick Web Studio — sitios y landings en 24 horas · Buenos Aires',
          'en': 'Quick Web Studio — websites and landing pages in 24 hours · Buenos Aires'}
-DESC = {'ru': 'Сайты и лендинги на любом языке. Черновик за 24 часа, платите только если понравился.',
+DESC = {'ru': 'Сайты на любом языке. Черновик за 24 часа, платите только если понравился.',
         'es': 'Sitios y landings en cualquier idioma. Borrador en 24 horas, pagás solo si te gusta.',
         'en': 'Websites and landing pages in any language. Draft in 24 hours, pay only if you like it.'}
