@@ -6,7 +6,7 @@ src=open(''+__import__('os').path.dirname(__file__)+'/master_ru.html').read()
 URL={'es':BASE,'ru':BASE+'ru/','en':BASE+'en/'}
 LOC={'es':'es_AR','ru':'ru_RU','en':'en_US'}
 def og(lang):
-    img=BASE+'og/'+lang+'.jpg?v=1'
+    img=BASE+'og/'+lang+'.jpg?v=2'
     alt=[l for l in ('es','ru','en') if l!=lang]
     return (f'<meta property="og:type" content="website"><meta property="og:site_name" content="Quick Web Studio">'
             f'<meta property="og:title" content="{TITLE[lang]}"><meta property="og:description" content="{DESC[lang]}">'
