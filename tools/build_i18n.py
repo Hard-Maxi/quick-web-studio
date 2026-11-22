@@ -53,7 +53,7 @@ def build(lang):
         print(lang,'untranslated markup:',left[:20])
     s=s.replace('<html lang="ru">','<html lang="%s">'%lang)
     s=re.sub(r'<title>[^<]*</title>','<title>%s</title>'%TITLE[lang],s,1)
-    hl=''.join(f'<link rel="alternate" hreflang="{l}" href="{URL[l]}">' for l in ('es','ru','en'))+f'<link rel="alternate" hreflang="x-default" href="{URL["es"]}"><link rel="canonical" href="{URL[lang]}"><meta name="description" content="{DESC[lang]}"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0B0B0F">'+og(lang)
+    hl=''.join(f'<link rel="alternate" hreflang="{l}" href="{URL[l]}">' for l in ('es','ru','en'))+f'<link rel="alternate" hreflang="x-default" href="{URL["es"]}"><link rel="canonical" href="{URL[lang]}"><meta name="description" content="{DESC[lang]}"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0B0B0F">'+og(lang)+'<script src="assets/ars.js" defer></script>'
     s=s.replace('<meta charset="utf-8">','<meta charset="utf-8">\n'+(HEAD_JS%lang)+'\n'+hl,1)
     old='<span style="color: #55565C">ES · <b style="color: #0B0B0F">RU</b> · EN</span>'
     assert s.count(old)==1; s=s.replace(old,switcher(lang,pre))
