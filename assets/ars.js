@@ -12,6 +12,7 @@
     s.textContent =
       '[data-ars]::after{content:attr(data-ars);display:block;font-size:13px;font-weight:400;line-height:1.3;letter-spacing:0;color:#6B7280;margin-top:4px;white-space:nowrap}' +
       '.qw-spp[data-ars]{flex-wrap:wrap}.qw-spp[data-ars]::after{flex-basis:100%;margin-top:6px}' +
+      'html[data-ars-on] .qw-spm{height:40px}.qw-spm[data-ars]::after{content:attr(data-ars-s);font-size:12px;margin-top:2px}' +
       '.qw-spa b[data-ars]{text-align:right}.qw-spa b[data-ars]::after{font-size:12px;margin-top:2px}' +
       '@media (max-width:760px){[data-ars-grid]{grid-template-columns:minmax(0,1fr)!important}.qw-spa b[data-ars]::after{content:attr(data-ars-s)}}';
     document.head.appendChild(s);
@@ -35,15 +36,15 @@
       if ((e.getAttribute('data-ars') || '') !== want) {
         if (want) e.setAttribute('data-ars', want); else e.removeAttribute('data-ars');
       }
-      if (want && e.tagName === 'B') {
+      if (want && (e.tagName === 'B' || e.classList.contains('qw-spm'))) {
         var sh = '\u2248 ' + fmt(v * rate) + ' ARS';
         if (e.getAttribute('data-ars-s') !== sh) e.setAttribute('data-ars-s', sh);
-        var g = e.parentElement && e.parentElement.parentElement;
+        var g = e.tagName === 'B' && e.parentElement && e.parentElement.parentElement;
         if (g && !g.hasAttribute('data-ars-grid')) g.setAttribute('data-ars-grid', '');
       }
     }
   }
-  function start(r) { rate = r; css(); tick(); setInterval(tick, 1000); }
+  function start(r) { rate = r; document.documentElement.setAttribute('data-ars-on', ''); css(); tick(); setInterval(tick, 1000); }
 
   try {
     var c = JSON.parse(localStorage.getItem(KEY) || 'null');
