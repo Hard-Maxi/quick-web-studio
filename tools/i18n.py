@@ -107,7 +107,7 @@ T = {
 "Профиль в Google Картах": ("Perfil en Google Maps", "Google Maps profile"),
 "Пять настоящих сайтов. Нажмите на карточку – откроется живой сайт.": ("Cinco sitios reales. Toca una tarjeta y se abre el sitio en vivo.", "Five real sites. Tap a card to open the live site."),
 "Работы": ("Trabajos", "Work"),
-"Работы, которые уже живут в сети": ("Trabajos que ya están en línea", "Work that’s already live"),
+"Работы, которые уже живут в сети": ("Proyectos ya publicados", "Work that’s already live"),
 "Разово": ("Pago único", "One-time"),
 "Редакция Quick Web Studio · Буэнос-Айрес": ("Redacción Quick Web Studio · Buenos Aires", "Quick Web Studio newsroom · Buenos Aires"),
 "С сопровождением": ("Con mantenimiento", "With maintenance"),
