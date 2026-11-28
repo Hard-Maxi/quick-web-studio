@@ -48,6 +48,15 @@ def build(lang):
         if lang=='en': js=js.replace("_dqP[0] + '».'","_dqP[0] + '”.'")
         js=js.replace('(this.state.gl || 0)','(this.state.gl ?? %d)'%(1 if lang=='es' else 2))
         s=head+mk+js
+        from urllib.parse import quote, unquote
+        WA={'Привет, хочу первый экран бесплатно':('Hola, quiero la portada gratis','Hi, I’d like the first screen for free'),
+            'Привет, хочу пакет «Экспресс»':('Hola, quiero el paquete «Express»','Hi, I’d like the “Express” package'),
+            'Привет, хочу пакет «Стандарт»':('Hola, quiero el paquete «Estándar»','Hi, I’d like the “Standard” package'),
+            'Привет, хочу пакет «Премиум»':('Hola, quiero el paquete «Premium»','Hi, I’d like the “Premium” package')}
+        def _wa(m):
+            t=unquote(m.group(2)); assert t in WA, t
+            return m.group(1)+quote(WA[t][k])
+        s=re.sub(r'(wa\.me/5491126963676\?text=)([^"\'\s]+)',_wa,s)
         s=s.replace('\x00SERP\x00',serp)
         left=[m for m in re.findall(r'>([^<>]*[А-Яа-яЁё][^<>]*)<',s[s.find('<x-dc>'):s.find('<script type="text/x-dc"')])]
         print(lang,'untranslated markup:',left[:20])
